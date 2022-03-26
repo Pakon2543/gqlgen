@@ -1,6 +1,8 @@
 {
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "devDependencies": {
     "apollo-cache-inmemory": "^1.6.5",
@@ -19,6 +21,8 @@
     "node-fetch": "^2.6.0"
   },
   "dependencies": {
-    "@babel/preset-env": "^7.7.7"
-  }
+    "@babel/preset-env": "^7.7.7",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
